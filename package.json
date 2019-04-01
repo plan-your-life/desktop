@@ -1,0 +1,78 @@
+{
+  "name": "pyl-app",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Lukas Germerott",
+  "description": "Plan Your Life",
+  "devDependencies": {
+    "electron": "latest",
+    "react-scripts": "latest",
+    "electron-builder": "latest",
+    "electron-builder-squirrel-windows": "latest",
+    "app-builder-lib": "latest"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.6.2",
+    "@material-ui/icons": "^3.0.1",
+    "js-sha512": "^0.8.0",
+    "node-fetch": "^2.3.0",
+    "node-machine-id": "^1.1.10",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router": "5.0.0",
+    "react-router-dom": "5.0.0",
+    "material-ui-pickers": "^2.1.1",
+    "@date-io/date-fns": "^1.0.1",
+    "react-recaptcha": "latest"
+  },
+  "build": {
+    "appId": "Present",
+    "files": [
+      "./build/**/*",
+      "./src/electron-starter.js"
+    ],
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/favicon.ico"
+    },
+    "directories": {
+      "buildResources": "assets"
+    },
+    "extends": null
+  },
+  "homepage": "./",
+  "main": "src/electron-starter.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "dist": "build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

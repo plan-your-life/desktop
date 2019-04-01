@@ -1,0 +1,15 @@
+.BottomNav {
+    width: calc(100% - 240px);
+    position: fixed;
+    bottom: 0;
+}
+.mainGrid{
+    margin: 80px 40px 80px 40px;
+}
+.modalPaper{
+    padding: 30px 20px;
+    position: absolute;
+    background-color: #404040;
+    outline: none;
+    width: 350px;
+}

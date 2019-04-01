@@ -1,0 +1,25 @@
+.main{
+    padding: 20px 50px 30px 50px;
+    margin-top: 25vh;
+    background-color: #606060;
+    box-shadow: 2px 1px 3px;
+}
+.main a{
+    cursor: pointer;
+    color: #5882FA;
+}
+.submitLoginBtn{
+    background-color: #474747;
+}
+.submitLoginBtn:hover{
+    background-color: #6b6b6b;
+}
+.submitLoginBtn:focus{
+    background-color: #6b6b6b;
+}
+.errorMsg{
+    color: rgb(255, 60, 60);
+}
+.successMsg{
+    color: #12ff00;
+}
